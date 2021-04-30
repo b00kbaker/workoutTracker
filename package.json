@@ -1,0 +1,32 @@
+{
+  "name": "workouttracker",
+  "version": "1.0.0",
+  "description": "Workout tracker utilizing graphs, list of time/date/length of workout, and abilitiy to edit or delete entries.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "watch": "nodemon server.js",
+    "seed": "node seeders/seed.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/b00kbaker/workoutTracker.git"
+  },
+  "keywords": [
+    "workout",
+    "tracker",
+    "graph"
+  ],
+  "author": "Caitlin Murphy",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.12.7",
+    "morgan": "^1.10.0"
+  },
+  "bugs": {
+    "url": "https://github.com/b00kbaker/workoutTracker/issues"
+  },
+  "homepage": "https://github.com/b00kbaker/workoutTracker#readme"
+}
