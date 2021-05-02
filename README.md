@@ -18,8 +18,8 @@
 
   ## View
   * GitHub Repo: https://github.com/b00kbaker/workoutTracker.git
-  * Deployed Webpage: 
-  * Image: 
+  * Deployed Webpage: https://git.heroku.com/nameless-citadel-83480.git
+  * Image: <img width="1440" alt="Screen Shot 2021-05-02 at 4 49 02 PM" src="https://user-images.githubusercontent.com/72171646/116830311-6b4aa500-ab66-11eb-90fe-7fd66ee3d9f4.png">
   
   
   ## Developer
