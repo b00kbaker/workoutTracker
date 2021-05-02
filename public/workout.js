@@ -5,6 +5,10 @@ async function initWorkout() {
       document
         .querySelector("a[href='/exercise?']")
         .setAttribute("href", `/exercise?id=${lastWorkout._id}`);
+        
+      // Call the fetch on lastWorkout (via api.js) and add the durations under one workout id for a total
+      lastWorkout.totalDuration = lastWorkout.exercises.reduce((a,b) => a + b.duration,
+      0);  
   
       const workoutSummary = {
         date: formatDate(lastWorkout.day),

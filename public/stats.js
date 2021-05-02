@@ -1,16 +1,3 @@
-// fetch to get back end data for chart
-
-// fetch("/api/workouts/range")
-//  .then(response => {
-//    return response.json();
-//  })
-//  .then(data => {
-//    populateChart(data);
-// });
-
-
-// API.getWorkoutsInRange()
-
 function generatePalette() {
     const arr = [
       '#003f5c',
@@ -214,20 +201,7 @@ function workoutNames(data) {
     });
   
     return [...new Set(workouts)];
-  }
-
-//   function duration(data) {
-//     let durations = [];
-  
-//     data.forEach(workout => {
-//       workout.exercises.forEach(exercise => {
-//         durations.push(exercise.duration);
-//       });
-//     });
-  
-//     return durations;
-// }
-  
+}
 
 
 
