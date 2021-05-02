@@ -1,15 +1,15 @@
 // fetch to get back end data for chart
 
-fetch("api/workouts/range")
- .then(response => {
-   return response.json();
- })
- .then(data => {
-   populateChart(data);
-});
+// fetch("/api/workouts/range")
+//  .then(response => {
+//    return response.json();
+//  })
+//  .then(data => {
+//    populateChart(data);
+// });
 
 
-API.getWorkoutsInRange()
+// API.getWorkoutsInRange()
 
 function generatePalette() {
     const arr = [
@@ -32,9 +32,9 @@ function generatePalette() {
     ];
   
     return arr;
-  }
+}
   
-  function populateChart(data) {
+function populateChart(data) {
     let durations = data.map(({ totalDuration }) => totalDuration);
     let pounds = calculateTotalWeight(data);
     let workouts = workoutNames(data);
@@ -184,11 +184,9 @@ function generatePalette() {
         },
       },
     });
-  }
-
-  // function duration?
+}
   
-  function calculateTotalWeight(data) {
+function calculateTotalWeight(data) {
     let totals = [];
   
     data.forEach((workout) => {
@@ -204,9 +202,9 @@ function generatePalette() {
     });
   
     return totals;
-  }
+}
   
-  function workoutNames(data) {
+function workoutNames(data) {
     let workouts = [];
   
     data.forEach((workout) => {
@@ -215,10 +213,23 @@ function generatePalette() {
       });
     });
   
-    // return de-duplicated array with JavaScript `Set` object
     return [...new Set(workouts)];
   }
+
+//   function duration(data) {
+//     let durations = [];
   
-  // get all workout data from back-end
-  API.getWorkoutsInRange().then(populateChart);
+//     data.forEach(workout => {
+//       workout.exercises.forEach(exercise => {
+//         durations.push(exercise.duration);
+//       });
+//     });
+  
+//     return durations;
+// }
+  
+
+
+
+API.getWorkoutsInRange().then(populateChart);
   
