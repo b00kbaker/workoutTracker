@@ -18,9 +18,12 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", {
   useFindAndModify: false
 });
 
-// Need to update routes
-app.use(require("./public/api.js"));
+app.use(require("./routes/apiRoutes.js"));
+app.use(require("./routes/frontRoutes.js"));
+
 
 app.listen(PORT, () => {
   console.log(`App running on port ${PORT}!`);
 });
+
+module.exports = router;

@@ -1,5 +1,12 @@
 // fetch to get back end data for chart
 
+fetch("api/workouts/range")
+ .then(response => {
+   return response.json();
+ })
+ .then(data => {
+   populateChart(data);
+});
 
 
 API.getWorkoutsInRange()
