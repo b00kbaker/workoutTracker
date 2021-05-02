@@ -1,3 +1,9 @@
+// fetch to get back end data for chart
+
+
+
+API.getWorkoutsInRange()
+
 function generatePalette() {
     const arr = [
       '#003f5c',
@@ -172,6 +178,8 @@ function generatePalette() {
       },
     });
   }
+
+  // function duration?
   
   function calculateTotalWeight(data) {
     let totals = [];
