@@ -1,7 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const morgan = require("morgan");
-// const routes = require("./routes");
 
 const PORT = process.env.PORT || 3000; 27017
 
@@ -11,7 +10,6 @@ app.use(morgan("dev"));
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-// app.use(routes);
 
 app.use(express.static("public"));
 
